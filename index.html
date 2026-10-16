@@ -18,18 +18,21 @@
         .hero-glow {
             background: radial-gradient(circle at 50% 0%, rgba(79, 70, 229, 0.15) 0%, rgba(255, 255, 255, 0) 72%);
         }
+        .balance-text {
+            text-wrap: balance;
+        }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased">
+<body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
 
     <!-- Navbar -->
     <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-2.5">
-                <div class="w-9 h-9 rounded-xl bg-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-sm shadow-indigo-300">
+        <div class="max-w-6xl mx-auto px-3.5 sm:px-6 h-15 sm:h-16 py-2.5 flex items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-indigo-600 flex items-center justify-center text-white font-bold text-base sm:text-lg shadow-sm shadow-indigo-300 shrink-0">
                     ⏱️
                 </div>
-                <span class="font-extrabold text-xl tracking-tight text-slate-900">Time <span class="text-indigo-600">Management</span></span>
+                <span class="font-extrabold text-base sm:text-xl tracking-tight text-slate-900 whitespace-nowrap">Time <span class="text-indigo-600">Management</span></span>
             </div>
             <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
                 <a href="#van-de" class="hover:text-indigo-600 transition">Vấn đề</a>
@@ -38,132 +41,132 @@
                 <a href="#loi-ich" class="hover:text-indigo-600 transition">Lợi ích</a>
                 <a href="#bang-gia" class="hover:text-indigo-600 transition">Bảng giá</a>
             </nav>
-            <button onclick="openModal()" class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-4 py-2.5 rounded-xl shadow-sm shadow-indigo-200 transition active:scale-95">
+            <button onclick="openModal()" class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs sm:text-sm font-semibold px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl shadow-sm shadow-indigo-200 transition active:scale-95 whitespace-nowrap">
                 Dùng thử 7 ngày
             </button>
         </div>
     </header>
 
     <!-- 1. HERO SECTION -->
-    <section class="hero-glow pt-12 pb-20 md:pt-16 md:pb-24 px-4 sm:px-6 overflow-hidden">
+    <section class="hero-glow pt-8 pb-14 sm:pt-12 sm:pb-20 md:pt-16 md:pb-24 px-3.5 sm:px-6 overflow-hidden">
         <div class="max-w-5xl mx-auto text-center">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs sm:text-sm font-semibold mb-6">
-                <span class="w-2 h-2 rounded-full bg-indigo-600 animate-ping"></span>
-                Hệ Thống Quản Lý Công Việc 6 Trong 1 • Tự Động Đồng Bộ 100%
+            <div class="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-[11px] sm:text-sm font-semibold mb-5 sm:mb-6">
+                <span class="w-2 h-2 rounded-full bg-indigo-600 animate-ping shrink-0"></span>
+                <span class="whitespace-nowrap">Hệ Thống Quản Lý 6 Trong 1 • Tự Động Đồng Bộ 100%</span>
             </div>
 
-            <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
-                Lấy lại 2 giờ mỗi ngày.<br class="hidden sm:inline">
+            <h1 class="text-[25px] sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-snug sm:leading-tight mb-4 sm:mb-6">
+                Lấy lại 2 giờ mỗi ngày.<br>
                 <span class="gradient-text">Làm ít hơn. Hiệu quả hơn.</span>
             </h1>
 
-            <p class="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-slate-600 mb-8 leading-relaxed">
+            <p class="max-w-3xl mx-auto text-sm sm:text-lg md:text-xl text-slate-600 mb-6 sm:mb-8 leading-relaxed balance-text px-1">
                 <strong>Time Management</strong> gói gọn <strong>6 chế độ quản lý khoa học</strong> giúp bạn tự động sắp xếp thứ tự ưu tiên, tập trung sâu và hoàn thành mọi mục tiêu trong ngày mà không còn cảm giác kiệt sức.
             </p>
 
             <!-- CTA Buttons -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
-                <button onclick="openModal()" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-base sm:text-lg px-8 py-4 rounded-2xl shadow-lg shadow-indigo-200 hover:shadow-xl hover:shadow-indigo-300 transition-all transform hover:-translate-y-0.5">
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-4">
+                <button onclick="openModal()" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm sm:text-lg px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl shadow-lg shadow-indigo-200 hover:shadow-xl hover:shadow-indigo-300 transition-all transform hover:-translate-y-0.5">
                     🚀 Bắt đầu 7 ngày dùng thử MIỄN PHÍ
                 </button>
-                <a href="#tinh-nang" class="w-full sm:w-auto px-6 py-4 rounded-2xl font-semibold text-slate-700 hover:bg-slate-200/60 transition">
+                <a href="#tinh-nang" class="w-full sm:w-auto px-6 py-3 sm:py-4 rounded-2xl text-sm sm:text-base font-semibold text-slate-700 bg-slate-200/50 sm:bg-transparent hover:bg-slate-200/60 transition">
                     Khám phá 6 chế độ ưu việt ↓
                 </a>
             </div>
-            <p class="text-xs sm:text-sm text-slate-500">
+            <p class="text-[11px] sm:text-sm text-slate-500 font-medium">
                 ✨ Dùng thử 7 ngày full tính năng • Gói 1 năm 365.000đ (Chỉ 1.000đ/ngày)
             </p>
 
             <!-- Interactive 6-in-1 App Preview Mockup -->
-            <div class="mt-12 max-w-5xl mx-auto bg-white rounded-3xl shadow-2xl border border-slate-200/90 overflow-hidden text-left">
+            <div class="mt-8 sm:mt-12 max-w-5xl mx-auto bg-white rounded-2xl sm:rounded-3xl shadow-2xl border border-slate-200/90 overflow-hidden text-left">
                 <!-- Window Bar & 6-Tab Switcher -->
-                <div class="bg-slate-900 px-4 py-3 space-y-2.5">
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center gap-2">
-                            <span class="w-3 h-3 rounded-full bg-rose-500"></span>
-                            <span class="w-3 h-3 rounded-full bg-amber-400"></span>
-                            <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
-                            <span class="ml-2 text-xs text-slate-300 font-semibold">Time Management Web App (6-in-1)</span>
+                <div class="bg-slate-900 px-3 sm:px-4 py-3 space-y-2.5">
+                    <div class="flex items-center justify-between gap-2">
+                        <div class="flex items-center gap-1.5 sm:gap-2">
+                            <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-rose-500"></span>
+                            <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-amber-400"></span>
+                            <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-emerald-400"></span>
+                            <span class="ml-1 sm:ml-2 text-[11px] sm:text-xs text-slate-300 font-semibold whitespace-nowrap">Time Management (6-in-1)</span>
                         </div>
-                        <span class="text-xs text-indigo-300 font-medium hidden sm:inline">👆 Bấm thử 6 chế độ quản lý bên dưới:</span>
+                        <span class="text-[11px] sm:text-xs text-indigo-300 font-medium whitespace-nowrap">👆 Bấm thử 6 chế độ:</span>
                     </div>
                     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-1.5 bg-slate-800 p-1.5 rounded-xl">
-                        <button onclick="switchDemoTab('dashboard')" id="tab-btn-dashboard" class="w-full py-2 px-2 rounded-lg text-xs font-semibold text-center whitespace-nowrap bg-indigo-600 text-white shadow-sm transition">
+                        <button onclick="switchDemoTab('dashboard')" id="tab-btn-dashboard" class="w-full py-2 px-1.5 sm:px-2 rounded-lg text-[11px] sm:text-xs font-semibold text-center whitespace-nowrap bg-indigo-600 text-white shadow-sm transition">
                             1. Trung tâm chỉ huy
                         </button>
-                        <button onclick="switchDemoTab('calendar')" id="tab-btn-calendar" class="w-full py-2 px-2 rounded-lg text-xs font-semibold text-center whitespace-nowrap text-slate-300 hover:text-white hover:bg-slate-700/60 transition">
+                        <button onclick="switchDemoTab('calendar')" id="tab-btn-calendar" class="w-full py-2 px-1.5 sm:px-2 rounded-lg text-[11px] sm:text-xs font-semibold text-center whitespace-nowrap text-slate-300 hover:text-white hover:bg-slate-700/60 transition">
                             2. Smart Calendar
                         </button>
-                        <button onclick="switchDemoTab('kanban')" id="tab-btn-kanban" class="w-full py-2 px-2 rounded-lg text-xs font-semibold text-center whitespace-nowrap text-slate-300 hover:text-white hover:bg-slate-700/60 transition">
+                        <button onclick="switchDemoTab('kanban')" id="tab-btn-kanban" class="w-full py-2 px-1.5 sm:px-2 rounded-lg text-[11px] sm:text-xs font-semibold text-center whitespace-nowrap text-slate-300 hover:text-white hover:bg-slate-700/60 transition">
                             3. Kanban
                         </button>
-                        <button onclick="switchDemoTab('eisenhower')" id="tab-btn-eisenhower" class="w-full py-2 px-2 rounded-lg text-xs font-semibold text-center whitespace-nowrap text-slate-300 hover:text-white hover:bg-slate-700/60 transition">
+                        <button onclick="switchDemoTab('eisenhower')" id="tab-btn-eisenhower" class="w-full py-2 px-1.5 sm:px-2 rounded-lg text-[11px] sm:text-xs font-semibold text-center whitespace-nowrap text-slate-300 hover:text-white hover:bg-slate-700/60 transition">
                             4. Eisenhower
                         </button>
-                        <button onclick="switchDemoTab('weekly')" id="tab-btn-weekly" class="w-full py-2 px-2 rounded-lg text-xs font-semibold text-center whitespace-nowrap text-slate-300 hover:text-white hover:bg-slate-700/60 transition">
+                        <button onclick="switchDemoTab('weekly')" id="tab-btn-weekly" class="w-full py-2 px-1.5 sm:px-2 rounded-lg text-[11px] sm:text-xs font-semibold text-center whitespace-nowrap text-slate-300 hover:text-white hover:bg-slate-700/60 transition">
                             5. Lộ trình Tuần
                         </button>
-                        <button onclick="switchDemoTab('daily')" id="tab-btn-daily" class="w-full py-2 px-2 rounded-lg text-xs font-semibold text-center whitespace-nowrap text-slate-300 hover:text-white hover:bg-slate-700/60 transition">
+                        <button onclick="switchDemoTab('daily')" id="tab-btn-daily" class="w-full py-2 px-1.5 sm:px-2 rounded-lg text-[11px] sm:text-xs font-semibold text-center whitespace-nowrap text-slate-300 hover:text-white hover:bg-slate-700/60 transition">
                             6. Điều hành Ngày
                         </button>
                     </div>
                 </div>
 
                 <!-- Tab 1: Table & Dashboard View (Trung tâm chỉ huy) -->
-                <div id="demo-tab-dashboard" class="p-6 sm:p-8 bg-gradient-to-br from-white to-slate-50">
-                    <div class="flex flex-wrap items-center justify-between gap-2 mb-5">
+                <div id="demo-tab-dashboard" class="p-4 sm:p-8 bg-gradient-to-br from-white to-slate-50">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 sm:mb-5">
                         <div>
-                            <span class="text-xs font-bold uppercase text-indigo-600">Chế độ #1 • Table & Dashboard View</span>
-                            <h3 class="font-extrabold text-slate-900 text-lg">Trung Tâm Chỉ Huy — Nắm Trọn Tiến Độ Trong Lòng Bàn Tay</h3>
+                            <span class="text-[11px] sm:text-xs font-bold uppercase text-indigo-600">Chế độ #1 • Table & Dashboard View</span>
+                            <h3 class="font-extrabold text-slate-900 text-sm sm:text-lg mt-0.5">Trung Tâm Chỉ Huy — Nắm Trọn Tiến Độ Trong Lòng Bàn Tay</h3>
                         </div>
-                        <span class="text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-full">⚡ Tự động đồng bộ sang 6 tab</span>
+                        <span class="self-start sm:self-auto text-[11px] sm:text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200 px-2.5 py-1 rounded-full whitespace-nowrap">⚡ Tự động đồng bộ sang 6 tab</span>
                     </div>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5">
-                        <div class="p-3.5 rounded-2xl bg-slate-900 text-white">
-                            <div class="text-xs text-slate-400">Tổng công việc</div>
-                            <div class="text-2xl font-black mt-0.5">28</div>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 mb-4 sm:mb-5">
+                        <div class="p-3 sm:p-3.5 rounded-2xl bg-slate-900 text-white">
+                            <div class="text-[11px] sm:text-xs text-slate-400">Tổng công việc</div>
+                            <div class="text-xl sm:text-2xl font-black mt-0.5">28</div>
                         </div>
-                        <div class="p-3.5 rounded-2xl bg-emerald-50 border border-emerald-200">
-                            <div class="text-xs text-emerald-700 font-medium">Đã hoàn thành</div>
-                            <div class="text-2xl font-black text-emerald-700 mt-0.5">21 (75%)</div>
+                        <div class="p-3 sm:p-3.5 rounded-2xl bg-emerald-50 border border-emerald-200">
+                            <div class="text-[11px] sm:text-xs text-emerald-700 font-medium">Đã hoàn thành</div>
+                            <div class="text-xl sm:text-2xl font-black text-emerald-700 mt-0.5">21 (75%)</div>
                         </div>
-                        <div class="p-3.5 rounded-2xl bg-indigo-50 border border-indigo-200">
-                            <div class="text-xs text-indigo-700 font-medium">Đang thực hiện</div>
-                            <div class="text-2xl font-black text-indigo-700 mt-0.5">5</div>
+                        <div class="p-3 sm:p-3.5 rounded-2xl bg-indigo-50 border border-indigo-200">
+                            <div class="text-[11px] sm:text-xs text-indigo-700 font-medium">Đang thực hiện</div>
+                            <div class="text-xl sm:text-2xl font-black text-indigo-700 mt-0.5">5</div>
                         </div>
-                        <div class="p-3.5 rounded-2xl bg-rose-50 border border-rose-200">
-                            <div class="text-xs text-rose-700 font-medium">Cần làm ngay</div>
-                            <div class="text-2xl font-black text-rose-600 mt-0.5">2</div>
+                        <div class="p-3 sm:p-3.5 rounded-2xl bg-rose-50 border border-rose-200">
+                            <div class="text-[11px] sm:text-xs text-rose-700 font-medium">Cần làm ngay</div>
+                            <div class="text-xl sm:text-2xl font-black text-rose-600 mt-0.5">2</div>
                         </div>
                     </div>
                     <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white">
                         <table class="w-full text-left text-xs sm:text-sm">
                             <thead class="bg-slate-100 text-slate-600 font-bold">
                                 <tr>
-                                    <th class="p-3">Nhiệm vụ</th>
-                                    <th class="p-3">Phân loại Eisenhower</th>
-                                    <th class="p-3">Trạng thái Kanban</th>
-                                    <th class="p-3">Deadline</th>
+                                    <th class="p-2.5 sm:p-3 whitespace-nowrap">Nhiệm vụ</th>
+                                    <th class="p-2.5 sm:p-3 whitespace-nowrap">Phân loại</th>
+                                    <th class="p-2.5 sm:p-3 whitespace-nowrap">Trạng thái</th>
+                                    <th class="p-2.5 sm:p-3 whitespace-nowrap">Deadline</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-slate-100">
                                 <tr>
-                                    <td class="p-3 font-semibold text-slate-800">Hoàn thiện chiến dịch ra mắt sản phẩm</td>
-                                    <td class="p-3"><span class="bg-rose-100 text-rose-700 px-2 py-0.5 rounded font-semibold text-xs">🔥 Làm ngay</span></td>
-                                    <td class="p-3"><span class="bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded font-semibold text-xs">Đang làm</span></td>
-                                    <td class="p-3 text-slate-600 font-medium">Hôm nay</td>
+                                    <td class="p-2.5 sm:p-3 font-semibold text-slate-800 whitespace-nowrap">Hoàn thiện chiến dịch sản phẩm</td>
+                                    <td class="p-2.5 sm:p-3 whitespace-nowrap"><span class="bg-rose-100 text-rose-700 px-2 py-0.5 rounded font-semibold text-[11px] sm:text-xs">🔥 Làm ngay</span></td>
+                                    <td class="p-2.5 sm:p-3 whitespace-nowrap"><span class="bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded font-semibold text-[11px] sm:text-xs">Đang làm</span></td>
+                                    <td class="p-2.5 sm:p-3 text-slate-600 font-medium whitespace-nowrap">Hôm nay</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3 font-semibold text-slate-800">Lập kế hoạch mục tiêu tuần tới</td>
-                                    <td class="p-3"><span class="bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded font-semibold text-xs">📅 Lên lịch</span></td>
-                                    <td class="p-3"><span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded font-semibold text-xs">Chưa làm</span></td>
-                                    <td class="p-3 text-slate-600 font-medium">Chủ Nhật</td>
+                                    <td class="p-2.5 sm:p-3 font-semibold text-slate-800 whitespace-nowrap">Lập kế hoạch mục tiêu tuần tới</td>
+                                    <td class="p-2.5 sm:p-3 whitespace-nowrap"><span class="bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded font-semibold text-[11px] sm:text-xs">📅 Lên lịch</span></td>
+                                    <td class="p-2.5 sm:p-3 whitespace-nowrap"><span class="bg-amber-100 text-amber-800 px-2 py-0.5 rounded font-semibold text-[11px] sm:text-xs">Chưa làm</span></td>
+                                    <td class="p-2.5 sm:p-3 text-slate-600 font-medium whitespace-nowrap">Chủ Nhật</td>
                                 </tr>
                                 <tr>
-                                    <td class="p-3 font-medium text-slate-400 line-through">Gửi báo cáo doanh thu tháng</td>
-                                    <td class="p-3"><span class="bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded font-semibold text-xs">✔ Đã xong</span></td>
-                                    <td class="p-3"><span class="bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded font-semibold text-xs">Hoàn thành</span></td>
-                                    <td class="p-3 text-emerald-600 font-semibold">Đúng hạn</td>
+                                    <td class="p-2.5 sm:p-3 font-medium text-slate-400 line-through whitespace-nowrap">Gửi báo cáo doanh thu tháng</td>
+                                    <td class="p-2.5 sm:p-3 whitespace-nowrap"><span class="bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded font-semibold text-[11px] sm:text-xs">✔ Đã xong</span></td>
+                                    <td class="p-2.5 sm:p-3 whitespace-nowrap"><span class="bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded font-semibold text-[11px] sm:text-xs">Hoàn thành</span></td>
+                                    <td class="p-2.5 sm:p-3 text-emerald-600 font-semibold whitespace-nowrap">Đúng hạn</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -171,30 +174,30 @@
                 </div>
 
                 <!-- Tab 2: Smart Calendar + Task Updater -->
-                <div id="demo-tab-calendar" class="hidden p-6 sm:p-8 bg-gradient-to-br from-white to-slate-50">
-                    <div class="flex flex-wrap items-center justify-between gap-2 mb-5">
+                <div id="demo-tab-calendar" class="hidden p-4 sm:p-8 bg-gradient-to-br from-white to-slate-50">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 sm:mb-5">
                         <div>
-                            <span class="text-xs font-bold uppercase text-amber-600">Chế độ #2 • Smart Calendar & Task Updater</span>
-                            <h3 class="font-extrabold text-slate-900 text-lg">Tick Hoàn Thành Ngay Trên Lịch Mà Không Cần Quay Lại Bảng Dữ Liệu!</h3>
+                            <span class="text-[11px] sm:text-xs font-bold uppercase text-amber-600">Chế độ #2 • Smart Calendar & Task Updater</span>
+                            <h3 class="font-extrabold text-slate-900 text-sm sm:text-lg mt-0.5">Tick Hoàn Thành Ngay Trên Lịch Mà Không Cần Quay Lại Bảng Dữ Liệu!</h3>
                         </div>
-                        <span class="text-xs font-bold bg-amber-100 text-amber-800 px-3 py-1 rounded-full">⭐ Hãy thử tick vào ô việc trên lịch bên dưới!</span>
+                        <span class="self-start sm:self-auto text-[11px] sm:text-xs font-bold bg-amber-100 text-amber-800 px-2.5 py-1 rounded-full whitespace-nowrap">⭐ Bấm tick thử vào ô bên dưới!</span>
                     </div>
-                    <div class="grid sm:grid-cols-3 gap-4">
-                        <div class="p-4 rounded-2xl bg-white border border-slate-200 shadow-sm">
+                    <div class="grid sm:grid-cols-3 gap-3 sm:gap-4">
+                        <div class="p-3.5 sm:p-4 rounded-2xl bg-white border border-slate-200 shadow-sm">
                             <div class="text-xs font-bold text-slate-400 mb-2">THỨ SÁU • 16/10</div>
                             <label class="flex items-center gap-2.5 p-2.5 rounded-xl bg-emerald-50 border border-emerald-200 cursor-pointer">
-                                <input type="checkbox" checked onchange="toggleCalendarTask(this)" class="w-4 h-4 accent-emerald-600 rounded">
+                                <input type="checkbox" checked onchange="toggleCalendarTask(this)" class="w-4 h-4 accent-emerald-600 rounded shrink-0">
                                 <span class="text-xs font-semibold text-slate-400 line-through">Gửi hợp đồng đối tác</span>
                             </label>
                             <label class="flex items-center gap-2.5 p-2.5 mt-2 rounded-xl bg-rose-50 border border-rose-200 cursor-pointer">
-                                <input type="checkbox" onchange="toggleCalendarTask(this)" class="w-4 h-4 accent-emerald-600 rounded">
+                                <input type="checkbox" onchange="toggleCalendarTask(this)" class="w-4 h-4 accent-emerald-600 rounded shrink-0">
                                 <span class="text-xs font-semibold text-slate-800">Chốt ngân sách Marketing</span>
                             </label>
                         </div>
-                        <div class="p-4 rounded-2xl bg-white border border-indigo-200 shadow-sm">
+                        <div class="p-3.5 sm:p-4 rounded-2xl bg-white border border-indigo-200 shadow-sm">
                             <div class="text-xs font-bold text-indigo-600 mb-2">THỨ BẢY • 17/10 (Ngày mai)</div>
                             <label class="flex items-center gap-2.5 p-2.5 rounded-xl bg-indigo-50/70 border border-indigo-200 cursor-pointer">
-                                <input type="checkbox" onchange="toggleCalendarTask(this)" class="w-4 h-4 accent-emerald-600 rounded">
+                                <input type="checkbox" onchange="toggleCalendarTask(this)" class="w-4 h-4 accent-emerald-600 rounded shrink-0">
                                 <span class="text-xs font-semibold text-slate-800">Tổng kết tiến độ dự án tuần</span>
                             </label>
                         </div>
@@ -206,52 +209,52 @@
                 </div>
 
                 <!-- Tab 3: Kanban Board -->
-                <div id="demo-tab-kanban" class="hidden p-6 sm:p-8 bg-gradient-to-br from-white to-slate-50">
-                    <div class="mb-5">
-                        <span class="text-xs font-bold uppercase text-emerald-600">Chế độ #3 • Bảng Kanban</span>
-                        <h3 class="font-extrabold text-slate-900 text-lg">Trực Quan Luồng Công Việc Theo 4 Giai Đoạn Rõ Ràng</h3>
+                <div id="demo-tab-kanban" class="hidden p-4 sm:p-8 bg-gradient-to-br from-white to-slate-50">
+                    <div class="mb-4 sm:mb-5">
+                        <span class="text-[11px] sm:text-xs font-bold uppercase text-emerald-600">Chế độ #3 • Bảng Kanban</span>
+                        <h3 class="font-extrabold text-slate-900 text-sm sm:text-lg mt-0.5">Trực Quan Luồng Công Việc Theo 4 Giai Đoạn Rõ Ràng</h3>
                     </div>
-                    <div class="grid sm:grid-cols-4 gap-3 text-xs">
-                        <div class="bg-slate-100 p-3.5 rounded-2xl border border-slate-200">
-                            <div class="font-bold text-slate-700 mb-2.5 flex justify-between"><span>📌 Chưa làm</span><span>2</span></div>
-                            <div class="p-2.5 bg-white rounded-xl shadow-sm mb-2 font-semibold text-slate-800">Chuẩn bị slide thuyết trình</div>
-                            <div class="p-2.5 bg-white rounded-xl shadow-sm font-semibold text-slate-800">Tối ưu nội dung Landing Page</div>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 text-xs">
+                        <div class="bg-slate-100 p-3 sm:p-3.5 rounded-2xl border border-slate-200">
+                            <div class="font-bold text-slate-700 mb-2 flex justify-between"><span>📌 Chưa làm</span><span>2</span></div>
+                            <div class="p-2 sm:p-2.5 bg-white rounded-xl shadow-sm mb-2 font-semibold text-slate-800">Chuẩn bị slide</div>
+                            <div class="p-2 sm:p-2.5 bg-white rounded-xl shadow-sm font-semibold text-slate-800">Tối ưu nội dung</div>
                         </div>
-                        <div class="bg-indigo-50 p-3.5 rounded-2xl border border-indigo-200">
-                            <div class="font-bold text-indigo-700 mb-2.5 flex justify-between"><span>⚡ Đang làm</span><span>1</span></div>
-                            <div class="p-2.5 bg-white rounded-xl shadow-sm border border-indigo-200 font-semibold text-slate-800">Chốt hợp đồng khách VIP</div>
+                        <div class="bg-indigo-50 p-3 sm:p-3.5 rounded-2xl border border-indigo-200">
+                            <div class="font-bold text-indigo-700 mb-2 flex justify-between"><span>⚡ Đang làm</span><span>1</span></div>
+                            <div class="p-2 sm:p-2.5 bg-white rounded-xl shadow-sm border border-indigo-200 font-semibold text-slate-800">Chốt hợp đồng VIP</div>
                         </div>
-                        <div class="bg-emerald-50 p-3.5 rounded-2xl border border-emerald-200">
-                            <div class="font-bold text-emerald-700 mb-2.5 flex justify-between"><span>✅ Hoàn thành</span><span>3</span></div>
-                            <div class="p-2.5 bg-white rounded-xl border border-emerald-200 text-slate-400 line-through">Họp kế hoạch đầu tuần</div>
+                        <div class="bg-emerald-50 p-3 sm:p-3.5 rounded-2xl border border-emerald-200">
+                            <div class="font-bold text-emerald-700 mb-2 flex justify-between"><span>✅ Hoàn thành</span><span>3</span></div>
+                            <div class="p-2 sm:p-2.5 bg-white rounded-xl border border-emerald-200 text-slate-400 line-through">Họp đầu tuần</div>
                         </div>
-                        <div class="bg-rose-50/60 p-3.5 rounded-2xl border border-rose-200">
-                            <div class="font-bold text-rose-700 mb-2.5 flex justify-between"><span>🚫 Đã hủy</span><span>1</span></div>
-                            <div class="p-2.5 bg-white/80 rounded-xl border border-rose-100 text-slate-400 line-through">Cuộc họp phát sinh không cần thiết</div>
+                        <div class="bg-rose-50/60 p-3 sm:p-3.5 rounded-2xl border border-rose-200">
+                            <div class="font-bold text-rose-700 mb-2 flex justify-between"><span>🚫 Đã hủy</span><span>1</span></div>
+                            <div class="p-2 sm:p-2.5 bg-white/80 rounded-xl border border-rose-100 text-slate-400 line-through">Họp phát sinh</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Tab 4: Eisenhower Matrix -->
-                <div id="demo-tab-eisenhower" class="hidden p-6 sm:p-8 bg-gradient-to-br from-white to-slate-50">
-                    <div class="mb-5">
-                        <span class="text-xs font-bold uppercase text-rose-600">Chế độ #4 • Ma Trận Eisenhower (Quy tắc 80/20)</span>
-                        <h3 class="font-extrabold text-slate-900 text-lg">Tự Động Phân Loại Vào 4 Nhóm — Tập Trung 100% Vào Việc Tạo Ra Kết Quả</h3>
+                <div id="demo-tab-eisenhower" class="hidden p-4 sm:p-8 bg-gradient-to-br from-white to-slate-50">
+                    <div class="mb-4 sm:mb-5">
+                        <span class="text-[11px] sm:text-xs font-bold uppercase text-rose-600">Chế độ #4 • Ma Trận Eisenhower (Quy tắc 80/20)</span>
+                        <h3 class="font-extrabold text-slate-900 text-sm sm:text-lg mt-0.5">Tự Động Phân Loại Vào 4 Nhóm — Tập Trung 100% Vào Việc Tạo Ra Kết Quả</h3>
                     </div>
-                    <div class="grid sm:grid-cols-2 gap-4 text-sm">
-                        <div class="p-4 rounded-2xl bg-rose-50 border border-rose-200">
+                    <div class="grid sm:grid-cols-2 gap-3 sm:gap-4 text-xs sm:text-sm">
+                        <div class="p-3.5 sm:p-4 rounded-2xl bg-rose-50 border border-rose-200">
                             <div class="font-extrabold text-xs text-rose-700 uppercase mb-2">🔥 1. Làm Ngay (Quan trọng & Khẩn cấp)</div>
                             <div class="p-2.5 bg-white rounded-xl font-medium text-slate-800">Xử lý đơn hàng & báo cáo dự án trọng điểm</div>
                         </div>
-                        <div class="p-4 rounded-2xl bg-indigo-50 border border-indigo-200">
+                        <div class="p-3.5 sm:p-4 rounded-2xl bg-indigo-50 border border-indigo-200">
                             <div class="font-extrabold text-xs text-indigo-700 uppercase mb-2">📅 2. Lên Lịch (Quan trọng, Chưa khẩn cấp)</div>
                             <div class="p-2.5 bg-white rounded-xl font-medium text-slate-800">Xây dựng lộ trình phát triển kỹ năng & dự án mới</div>
                         </div>
-                        <div class="p-4 rounded-2xl bg-amber-50 border border-amber-200">
+                        <div class="p-3.5 sm:p-4 rounded-2xl bg-amber-50 border border-amber-200">
                             <div class="font-extrabold text-xs text-amber-800 uppercase mb-2">🤝 3. Ủy Quyền (Khẩn cấp, Ít quan trọng)</div>
                             <div class="p-2.5 bg-white rounded-xl font-medium text-slate-800">Soạn thảo giấy tờ hành chính & đặt lịch phòng họp</div>
                         </div>
-                        <div class="p-4 rounded-2xl bg-slate-100 border border-slate-200">
+                        <div class="p-3.5 sm:p-4 rounded-2xl bg-slate-100 border border-slate-200">
                             <div class="font-extrabold text-xs text-slate-600 uppercase mb-2">🗑️ 4. Bỏ Qua (Không khẩn cấp & Không quan trọng)</div>
                             <div class="p-2.5 bg-white rounded-xl font-medium text-slate-400 line-through">Lướt mạng xã hội vô định trong giờ làm việc</div>
                         </div>
@@ -259,10 +262,10 @@
                 </div>
 
                 <!-- Tab 5: Weekly Planner -->
-                <div id="demo-tab-weekly" class="hidden p-6 sm:p-8 bg-gradient-to-br from-white to-slate-50">
-                    <div class="mb-5">
-                        <span class="text-xs font-bold uppercase text-purple-600">Chế độ #5 • Quản Trị Tuần Làm Việc Hiệu Quả</span>
-                        <h3 class="font-extrabold text-slate-900 text-lg">Kiểm Soát Toàn Bộ Lộ Trình 7 Ngày Tới Chỉ Trên Một Màn Hình</h3>
+                <div id="demo-tab-weekly" class="hidden p-4 sm:p-8 bg-gradient-to-br from-white to-slate-50">
+                    <div class="mb-4 sm:mb-5">
+                        <span class="text-[11px] sm:text-xs font-bold uppercase text-purple-600">Chế độ #5 • Quản Trị Tuần Làm Việc Hiệu Quả</span>
+                        <h3 class="font-extrabold text-slate-900 text-sm sm:text-lg mt-0.5">Kiểm Soát Toàn Bộ Lộ Trình 7 Ngày Tới Chỉ Trên Một Màn Hình</h3>
                     </div>
                     <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-2.5 text-xs">
                         <div class="p-3 rounded-xl bg-white border border-slate-200"><div class="font-bold text-indigo-600 mb-1">Thứ 2</div><p class="text-slate-600">Họp chiến lược & chốt KPI tuần</p></div>
@@ -271,31 +274,40 @@
                         <div class="p-3 rounded-xl bg-white border border-slate-200"><div class="font-bold text-indigo-600 mb-1">Thứ 5</div><p class="text-slate-600">Hoàn thiện sản phẩm & chạy thử</p></div>
                         <div class="p-3 rounded-xl bg-white border border-slate-200"><div class="font-bold text-indigo-600 mb-1">Thứ 6</div><p class="text-slate-600">Tổng kết & báo cáo tuần</p></div>
                         <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-200"><div class="font-bold text-emerald-700 mb-1">Thứ 7</div><p class="text-emerald-800">Đọc sách & học kỹ năng mới</p></div>
-                        <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-200"><div class="font-bold text-emerald-700 mb-1">Chủ Nhật</div><p class="text-emerald-800">Nghỉ ngơi bên gia đình & nạp năng lượng</p></div>
+                        <div class="p-3 rounded-xl bg-emerald-50 border border-emerald-200 col-span-2 md:col-span-1"><div class="font-bold text-emerald-700 mb-1">Chủ Nhật</div><p class="text-emerald-800">Nghỉ ngơi bên gia đình & nạp năng lượng</p></div>
                     </div>
                 </div>
 
                 <!-- Tab 6: Daily Planner -->
-                <div id="demo-tab-daily" class="hidden p-6 sm:p-8 bg-gradient-to-br from-white to-slate-50">
-                    <div class="mb-5">
-                        <span class="text-xs font-bold uppercase text-cyan-600">Chế độ #6 • Trợ Lý Điều Hành Ngày Mới</span>
-                        <h3 class="font-extrabold text-slate-900 text-lg">Sắp Xếp Gọn Gàng Theo Trình Tự Thời Gian — Duy Trì Đà Năng Suất Cả Ngày</h3>
+                <div id="demo-tab-daily" class="hidden p-4 sm:p-8 bg-gradient-to-br from-white to-slate-50">
+                    <div class="mb-4 sm:mb-5">
+                        <span class="text-[11px] sm:text-xs font-bold uppercase text-cyan-600">Chế độ #6 • Trợ Lý Điều Hành Ngày Mới</span>
+                        <h3 class="font-extrabold text-slate-900 text-sm sm:text-lg mt-0.5">Sắp Xếp Gọn Gàng Theo Trình Tự Thời Gian — Duy Trì Đà Năng Suất Cả Ngày</h3>
                     </div>
-                    <div class="space-y-2.5 text-sm">
-                        <div class="flex items-center gap-4 p-3 rounded-xl bg-white border border-slate-200">
-                            <span class="font-mono font-bold text-indigo-600 text-xs bg-indigo-50 px-2.5 py-1 rounded-lg">08:30 - 10:30</span>
+                    <div class="space-y-2.5 text-xs sm:text-sm">
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4 p-3 rounded-xl bg-white border border-slate-200">
+                            <div class="flex items-center justify-between sm:justify-start gap-2">
+                                <span class="font-mono font-bold text-indigo-600 text-xs bg-indigo-50 px-2.5 py-1 rounded-lg whitespace-nowrap">08:30 - 10:30</span>
+                                <span class="text-xs font-bold text-emerald-600 sm:hidden">✔ Đã xong</span>
+                            </div>
                             <span class="font-semibold text-slate-800 flex-1">Giải quyết việc quan trọng nhất #1 (Deep Work)</span>
-                            <span class="text-xs font-bold text-emerald-600">✔ Đã xong</span>
+                            <span class="hidden sm:inline text-xs font-bold text-emerald-600 whitespace-nowrap">✔ Đã xong</span>
                         </div>
-                        <div class="flex items-center gap-4 p-3 rounded-xl bg-indigo-50/60 border border-indigo-200">
-                            <span class="font-mono font-bold text-indigo-600 text-xs bg-white px-2.5 py-1 rounded-lg">14:00 - 16:00</span>
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4 p-3 rounded-xl bg-indigo-50/60 border border-indigo-200">
+                            <div class="flex items-center justify-between sm:justify-start gap-2">
+                                <span class="font-mono font-bold text-indigo-600 text-xs bg-white px-2.5 py-1 rounded-lg whitespace-nowrap">14:00 - 16:00</span>
+                                <span class="text-xs font-bold text-indigo-600 sm:hidden">⚡ Đang diễn ra</span>
+                            </div>
                             <span class="font-semibold text-slate-800 flex-1">Làm việc với đối tác & xử lý công việc nhóm Lên lịch</span>
-                            <span class="text-xs font-bold text-indigo-600">⚡ Đang diễn ra</span>
+                            <span class="hidden sm:inline text-xs font-bold text-indigo-600 whitespace-nowrap">⚡ Đang diễn ra</span>
                         </div>
-                        <div class="flex items-center gap-4 p-3 rounded-xl bg-white border border-slate-200">
-                            <span class="font-mono font-bold text-slate-600 text-xs bg-slate-100 px-2.5 py-1 rounded-lg">17:00 - 17:30</span>
+                        <div class="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-4 p-3 rounded-xl bg-white border border-slate-200">
+                            <div class="flex items-center justify-between sm:justify-start gap-2">
+                                <span class="font-mono font-bold text-slate-600 text-xs bg-slate-100 px-2.5 py-1 rounded-lg whitespace-nowrap">17:00 - 17:30</span>
+                                <span class="text-xs font-medium text-slate-500 sm:hidden">Sắp tới</span>
+                            </div>
                             <span class="font-semibold text-slate-800 flex-1">Review ngày làm việc & thảnh thơi tan ca đúng giờ</span>
-                            <span class="text-xs font-medium text-slate-500">Sắp tới</span>
+                            <span class="hidden sm:inline text-xs font-medium text-slate-500 whitespace-nowrap">Sắp tới</span>
                         </div>
                     </div>
                 </div>
@@ -304,31 +316,31 @@
     </section>
 
     <!-- 2. PAIN POINTS (VẤN ĐỀ KHÁCH HÀNG) -->
-    <section id="van-de" class="py-16 md:py-24 bg-white px-4 sm:px-6 border-y border-slate-200/70">
+    <section id="van-de" class="py-12 sm:py-16 md:py-24 bg-white px-4 sm:px-6 border-y border-slate-200/70">
         <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-14">
-                <span class="text-rose-600 font-bold text-sm uppercase tracking-wider">Vấn đề khách hàng đang gặp phải</span>
-                <h2 class="text-xl sm:text-3xl lg:text-[34px] md:whitespace-nowrap font-extrabold text-slate-900 mt-2">
+            <div class="text-center mb-10 sm:mb-14">
+                <span class="text-rose-600 font-bold text-xs sm:text-sm uppercase tracking-wider">Vấn đề khách hàng đang gặp phải</span>
+                <h2 class="text-xl sm:text-3xl lg:text-[34px] md:whitespace-nowrap font-extrabold text-slate-900 mt-2 balance-text leading-snug">
                     Tại sao bạn luôn cảm thấy "ngợp" vì quá nhiều việc mỗi ngày?
                 </h2>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="p-7 rounded-3xl bg-gradient-to-b from-rose-50/70 to-white border border-rose-100 shadow-sm">
-                    <div class="w-12 h-12 rounded-2xl bg-rose-500 text-white flex items-center justify-center text-xl font-bold mb-5">❌</div>
-                    <h3 class="font-extrabold text-slate-900 text-lg mb-2">Mất kiểm soát tiến độ & Trễ Deadline</h3>
+            <div class="grid md:grid-cols-3 gap-4 sm:gap-6">
+                <div class="p-5 sm:p-7 rounded-3xl bg-gradient-to-b from-rose-50/70 to-white border border-rose-100 shadow-sm">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-rose-500 text-white flex items-center justify-center text-lg sm:text-xl font-bold mb-4 sm:mb-5">❌</div>
+                    <h3 class="font-extrabold text-slate-900 text-base sm:text-lg mb-2">Mất kiểm soát tiến độ & Trễ Deadline</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">Công việc ghi chú rời rạc khắp nơi khiến bạn không nắm được bức tranh tổng thể, dễ bỏ quên đầu việc quan trọng và rơi vào cảnh "nước đến chân mới nhảy".</p>
                 </div>
 
-                <div class="p-7 rounded-3xl bg-gradient-to-b from-blue-50/70 to-white border border-blue-100 shadow-sm">
-                    <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-xl font-bold mb-5">❌</div>
-                    <h3 class="font-extrabold text-slate-900 text-lg mb-2">Làm việc quần quật nhưng không ra kết quả</h3>
+                <div class="p-5 sm:p-7 rounded-3xl bg-gradient-to-b from-blue-50/70 to-white border border-blue-100 shadow-sm">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-lg sm:text-xl font-bold mb-4 sm:mb-5">❌</div>
+                    <h3 class="font-extrabold text-slate-900 text-base sm:text-lg mb-2">Làm việc quần quật nhưng không ra kết quả</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">Không có bộ lọc ưu tiên 80/20 nên bạn bị cuốn vào những việc khẩn cấp vụn vặt cả ngày, trong khi mục tiêu cốt lõi tạo ra thu nhập và thăng tiến lại bị trì hoãn.</p>
                 </div>
 
-                <div class="p-7 rounded-3xl bg-gradient-to-b from-amber-50/70 to-white border border-amber-100 shadow-sm">
-                    <div class="w-12 h-12 rounded-2xl bg-amber-500 text-white flex items-center justify-center text-xl font-bold mb-5">❌</div>
-                    <h3 class="font-extrabold text-slate-900 text-lg mb-2">Mệt mỏi vì cập nhật thủ công ở nhiều nơi</h3>
+                <div class="p-5 sm:p-7 rounded-3xl bg-gradient-to-b from-amber-50/70 to-white border border-amber-100 shadow-sm">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-amber-500 text-white flex items-center justify-center text-lg sm:text-xl font-bold mb-4 sm:mb-5">❌</div>
+                    <h3 class="font-extrabold text-slate-900 text-base sm:text-lg mb-2">Mệt mỏi vì cập nhật thủ công ở nhiều nơi</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">Sửa một công việc trên lịch lại phải quay về bảng danh sách để gạch bỏ. Sự rườm rà khiến bạn nhanh nản và bỏ cuộc chỉ sau vài ngày sử dụng.</p>
                 </div>
             </div>
@@ -336,30 +348,30 @@
     </section>
 
     <!-- 3. THE 6 CORE SOLUTIONS (GIẢI PHÁP 6 TRONG 1 CỦA BẠN) -->
-    <section id="tinh-nang" class="py-16 md:py-24 px-4 sm:px-6 bg-slate-50">
+    <section id="tinh-nang" class="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-slate-50">
         <div class="max-w-6xl mx-auto">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-indigo-600 font-bold text-sm uppercase tracking-wider">Giải pháp toàn diện từ Time Management</span>
-                <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-2 mb-4 leading-tight">
+            <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-16">
+                <span class="text-indigo-600 font-bold text-xs sm:text-sm uppercase tracking-wider">Giải pháp toàn diện từ Time Management</span>
+                <h2 class="text-[20px] sm:text-4xl font-extrabold text-slate-900 mt-2 mb-3 sm:mb-4 leading-snug sm:leading-tight">
                     Hệ Thống Quản Lý Thời Gian "6 Trong 1"<br>
                     <span class="gradient-text">Tự Động Hóa Hoàn Toàn</span>
                 </h2>
-                <p class="text-slate-600 text-base sm:text-lg">
+                <p class="text-slate-600 text-sm sm:text-lg balance-text">
                     Tất cả <strong>6 chế độ quản lý công việc đắt giá nhất</strong> được thiết kế khoa học và gói gọn trong một Web App duy nhất. Chỉnh sửa ở bất kỳ đâu, hệ thống tự động đồng bộ tức thì!
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-7">
                 <!-- 1. Table & Dashboard View -->
-                <div class="bg-white rounded-3xl p-7 shadow-sm border border-slate-200/90 hover:border-indigo-400 hover:shadow-md transition flex flex-col justify-between">
+                <div class="bg-white rounded-3xl p-5 sm:p-7 shadow-sm border border-slate-200/90 hover:border-indigo-400 hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-4">
-                            <span class="w-12 h-12 rounded-2xl bg-indigo-600 text-white font-black text-lg flex items-center justify-center shadow-sm">01</span>
+                            <span class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-indigo-600 text-white font-black text-base sm:text-lg flex items-center justify-center shadow-sm">01</span>
                             <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-indigo-50 text-indigo-700">Trung tâm chỉ huy</span>
                         </div>
-                        <h3 class="text-xl font-extrabold text-slate-900 mb-2">Table & Dashboard View</h3>
+                        <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mb-1.5">Table & Dashboard View</h3>
                         <p class="text-sm font-semibold text-indigo-600 mb-3">Nắm trọn tiến độ trong lòng bàn tay.</p>
-                        <ul class="space-y-2.5 text-sm text-slate-600 leading-relaxed">
+                        <ul class="space-y-2 text-sm text-slate-600 leading-relaxed">
                             <li class="flex items-start gap-2">
                                 <span class="text-indigo-600 font-bold">✔</span>
                                 <span><strong>Thiết kế 6 trong 1:</strong> Tất cả 6 chế độ quản lý công việc gói gọn trong một web app, được thiết kế khoa học.</span>
@@ -373,15 +385,15 @@
                 </div>
 
                 <!-- 2. Smart Calendar -->
-                <div class="bg-white rounded-3xl p-7 shadow-sm border border-slate-200/90 hover:border-indigo-400 hover:shadow-md transition flex flex-col justify-between">
+                <div class="bg-white rounded-3xl p-5 sm:p-7 shadow-sm border border-slate-200/90 hover:border-indigo-400 hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-4">
-                            <span class="w-12 h-12 rounded-2xl bg-amber-500 text-white font-black text-lg flex items-center justify-center shadow-sm">02</span>
+                            <span class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-amber-500 text-white font-black text-base sm:text-lg flex items-center justify-center shadow-sm">02</span>
                             <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-amber-50 text-amber-800">Trợ lý nhắc lịch</span>
                         </div>
-                        <h3 class="text-xl font-extrabold text-slate-900 mb-2">Smart Calendar</h3>
+                        <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mb-1.5">Smart Calendar</h3>
                         <p class="text-sm font-semibold text-amber-600 mb-3">Không bao giờ Miss Deadline nữa.</p>
-                        <ul class="space-y-2.5 text-sm text-slate-600 leading-relaxed">
+                        <ul class="space-y-2 text-sm text-slate-600 leading-relaxed">
                             <li class="flex items-start gap-2">
                                 <span class="text-amber-600 font-bold">✔</span>
                                 <span><strong>Đồng bộ tự động:</strong> Tự động đưa toàn bộ Deadline từ danh sách việc lên Lịch tháng trực quan.</span>
@@ -395,55 +407,55 @@
                 </div>
 
                 <!-- 3. Kanban -->
-                <div class="bg-white rounded-3xl p-7 shadow-sm border border-slate-200/90 hover:border-indigo-400 hover:shadow-md transition flex flex-col justify-between">
+                <div class="bg-white rounded-3xl p-5 sm:p-7 shadow-sm border border-slate-200/90 hover:border-indigo-400 hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-4">
-                            <span class="w-12 h-12 rounded-2xl bg-emerald-600 text-white font-black text-lg flex items-center justify-center shadow-sm">03</span>
+                            <span class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-emerald-600 text-white font-black text-base sm:text-lg flex items-center justify-center shadow-sm">03</span>
                             <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-emerald-50 text-emerald-700">Luồng công việc</span>
                         </div>
-                        <h3 class="text-xl font-extrabold text-slate-900 mb-2">Bảng Kanban Trực Quan</h3>
+                        <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mb-1.5">Bảng Kanban Trực Quan</h3>
                         <p class="text-sm font-semibold text-emerald-600 mb-3">Trực quan hóa toàn bộ luồng công việc.</p>
                         <p class="text-sm text-slate-600 leading-relaxed mb-3">
                             Hiển thị rõ ràng mọi nhiệm vụ của bạn đang nằm ở giai đoạn nào để xử lý kịp thời, tránh ứ đọng:
                         </p>
-                        <div class="flex flex-wrap gap-1.5 text-xs font-semibold">
-                            <span class="px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700">📌 Chưa làm</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-indigo-50 text-indigo-700">⚡ Đang làm</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700">✅ Hoàn thành</span>
-                            <span class="px-2.5 py-1 rounded-lg bg-rose-50 text-rose-700">🚫 Đã hủy</span>
+                        <div class="grid grid-cols-2 gap-1.5 text-xs font-semibold">
+                            <span class="px-2.5 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-center">📌 Chưa làm</span>
+                            <span class="px-2.5 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-center">⚡ Đang làm</span>
+                            <span class="px-2.5 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 text-center">✅ Hoàn thành</span>
+                            <span class="px-2.5 py-1.5 rounded-lg bg-rose-50 text-rose-700 text-center">🚫 Đã hủy</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- 4. Eisenhower -->
-                <div class="bg-white rounded-3xl p-7 shadow-sm border border-slate-200/90 hover:border-indigo-400 hover:shadow-md transition flex flex-col justify-between">
+                <div class="bg-white rounded-3xl p-5 sm:p-7 shadow-sm border border-slate-200/90 hover:border-indigo-400 hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-4">
-                            <span class="w-12 h-12 rounded-2xl bg-rose-600 text-white font-black text-lg flex items-center justify-center shadow-sm">04</span>
+                            <span class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-rose-600 text-white font-black text-base sm:text-lg flex items-center justify-center shadow-sm">04</span>
                             <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-rose-50 text-rose-700">Quy tắc 80/20</span>
                         </div>
-                        <h3 class="text-xl font-extrabold text-slate-900 mb-2">Ma Trận Eisenhower</h3>
+                        <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mb-1.5">Ma Trận Eisenhower</h3>
                         <p class="text-sm font-semibold text-rose-600 mb-3">Tập trung 100% vào nhóm việc tạo ra kết quả.</p>
                         <p class="text-sm text-slate-600 leading-relaxed mb-3">
                             Tự động phân loại công việc của bạn vào 4 nhóm chiến lược để không lãng phí thời gian vào việc vô bổ:
                         </p>
                         <div class="grid grid-cols-2 gap-1.5 text-xs font-semibold">
-                            <span class="px-2.5 py-1.5 rounded-lg bg-rose-50 text-rose-700">🔥 1. Làm ngay</span>
-                            <span class="px-2.5 py-1.5 rounded-lg bg-indigo-50 text-indigo-700">📅 2. Lên lịch</span>
-                            <span class="px-2.5 py-1.5 rounded-lg bg-amber-50 text-amber-800">🤝 3. Ủy quyền</span>
-                            <span class="px-2.5 py-1.5 rounded-lg bg-slate-100 text-slate-600">🗑️ 4. Bỏ qua</span>
+                            <span class="px-2.5 py-1.5 rounded-lg bg-rose-50 text-rose-700 text-center">🔥 1. Làm ngay</span>
+                            <span class="px-2.5 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 text-center">📅 2. Lên lịch</span>
+                            <span class="px-2.5 py-1.5 rounded-lg bg-amber-50 text-amber-800 text-center">🤝 3. Ủy quyền</span>
+                            <span class="px-2.5 py-1.5 rounded-lg bg-slate-100 text-slate-600 text-center">🗑️ 4. Bỏ qua</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- 5. Quản trị tuần làm việc hiệu quả -->
-                <div class="bg-white rounded-3xl p-7 shadow-sm border border-slate-200/90 hover:border-indigo-400 hover:shadow-md transition flex flex-col justify-between">
+                <div class="bg-white rounded-3xl p-5 sm:p-7 shadow-sm border border-slate-200/90 hover:border-indigo-400 hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-4">
-                            <span class="w-12 h-12 rounded-2xl bg-purple-600 text-white font-black text-lg flex items-center justify-center shadow-sm">05</span>
+                            <span class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-purple-600 text-white font-black text-base sm:text-lg flex items-center justify-center shadow-sm">05</span>
                             <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-purple-50 text-purple-700">Lộ trình 7 ngày</span>
                         </div>
-                        <h3 class="text-xl font-extrabold text-slate-900 mb-2">Quản Trị Tuần Hiệu Quả</h3>
+                        <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mb-1.5">Quản Trị Tuần Hiệu Quả</h3>
                         <p class="text-sm font-semibold text-purple-600 mb-3">Kiểm soát trọn vẹn 7 ngày tới trên 1 màn hình.</p>
                         <p class="text-sm text-slate-600 leading-relaxed">
                             Giúp bạn chủ động phân bổ khối lượng công việc trong tuần, cân bằng hoàn hảo giữa thời gian xử lý dự án và thời gian nghỉ ngơi, đảm bảo mọi mục tiêu tuần đều hoàn thành đúng hạn.
@@ -452,13 +464,13 @@
                 </div>
 
                 <!-- 6. Trợ lý điều hành ngày mới -->
-                <div class="bg-white rounded-3xl p-7 shadow-sm border border-slate-200/90 hover:border-indigo-400 hover:shadow-md transition flex flex-col justify-between">
+                <div class="bg-white rounded-3xl p-5 sm:p-7 shadow-sm border border-slate-200/90 hover:border-indigo-400 hover:shadow-md transition flex flex-col justify-between">
                     <div>
                         <div class="flex items-center justify-between mb-4">
-                            <span class="w-12 h-12 rounded-2xl bg-cyan-600 text-white font-black text-lg flex items-center justify-center shadow-sm">06</span>
+                            <span class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-cyan-600 text-white font-black text-base sm:text-lg flex items-center justify-center shadow-sm">06</span>
                             <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-cyan-50 text-cyan-700">Năng suất mỗi ngày</span>
                         </div>
-                        <h3 class="text-xl font-extrabold text-slate-900 mb-2">Trợ Lý Điều Hành Ngày Mới</h3>
+                        <h3 class="text-lg sm:text-xl font-extrabold text-slate-900 mb-1.5">Trợ Lý Điều Hành Ngày Mới</h3>
                         <p class="text-sm font-semibold text-cyan-600 mb-3">Xóa bỏ hoàn toàn cảm giác "ngợp" vì nhiều việc.</p>
                         <p class="text-sm text-slate-600 leading-relaxed">
                             Mọi đầu việc trong ngày được sắp xếp gọn gàng theo trình tự thời gian rõ ràng, giúp bạn hành động quyết đoán và duy trì đà năng suất từ sáng sớm đến tối muộn.
@@ -470,16 +482,56 @@
     </section>
 
     <!-- 4. COMPARISON TABLE (SO SÁNH VƯỢT TRỘI) -->
-    <section id="so-sanh" class="py-16 md:py-24 bg-white px-4 sm:px-6 border-t border-slate-200/70">
+    <section id="so-sanh" class="py-12 sm:py-16 md:py-24 bg-white px-4 sm:px-6 border-t border-slate-200/70">
         <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-12">
-                <span class="text-indigo-600 font-bold text-sm uppercase tracking-wider">Sự khác biệt độc quyền</span>
-                <h2 class="text-xl sm:text-3xl lg:text-[34px] md:whitespace-nowrap font-extrabold text-slate-900 mt-2">
+            <div class="text-center mb-8 sm:mb-12">
+                <span class="text-indigo-600 font-bold text-xs sm:text-sm uppercase tracking-wider">Sự khác biệt vượt trội</span>
+                <h2 class="text-xl sm:text-3xl lg:text-[34px] md:whitespace-nowrap font-extrabold text-slate-900 mt-2 balance-text leading-snug">
                     Tại sao Time Management vượt xa cách quản lý thông thường?
                 </h2>
             </div>
 
-            <div class="overflow-x-auto rounded-3xl border border-slate-200 shadow-lg">
+            <!-- Giao diện Mobile: Thẻ So Sánh Cân Đối (Không cần cuộn ngang trên điện thoại) -->
+            <div class="md:hidden space-y-3.5">
+                <div class="rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <div class="bg-slate-900 text-white px-4 py-2.5 text-xs font-bold uppercase tracking-wider">1. Chế độ xem</div>
+                    <div class="p-3.5 bg-white space-y-2 text-xs">
+                        <div class="text-slate-500">❌ <strong>Cách cũ:</strong> Đơn điệu, tách biệt từng phần</div>
+                        <div class="p-2.5 rounded-xl bg-indigo-50/70 text-slate-900 font-semibold border border-indigo-100">✔ <strong>Time Management:</strong> 6 trong 1 (Dashboard, Lịch, Kanban, Eisenhower, Tuần, Ngày)</div>
+                    </div>
+                </div>
+                <div class="rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <div class="bg-slate-900 text-white px-4 py-2.5 text-xs font-bold uppercase tracking-wider">2. Tương tác trên Lịch</div>
+                    <div class="p-3.5 bg-white space-y-2 text-xs">
+                        <div class="text-rose-600">❌ <strong>Cách cũ:</strong> Chỉ xem, phải quay lại bảng gốc để sửa</div>
+                        <div class="p-2.5 rounded-xl bg-emerald-50/80 text-emerald-800 font-semibold border border-emerald-200">★ <strong>Time Management:</strong> Task Updater tick hoàn thành trực tiếp ngay trên Lịch</div>
+                    </div>
+                </div>
+                <div class="rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <div class="bg-slate-900 text-white px-4 py-2.5 text-xs font-bold uppercase tracking-wider">3. Đồng bộ dữ liệu</div>
+                    <div class="p-3.5 bg-white space-y-2 text-xs">
+                        <div class="text-rose-600">❌ <strong>Cách cũ:</strong> Copy-paste thủ công mất thời gian</div>
+                        <div class="p-2.5 rounded-xl bg-emerald-50/80 text-emerald-800 font-semibold border border-emerald-200">✔ <strong>Time Management:</strong> Sửa 1 nơi, Script tự động đồng bộ sang cả 6 tab</div>
+                    </div>
+                </div>
+                <div class="rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <div class="bg-slate-900 text-white px-4 py-2.5 text-xs font-bold uppercase tracking-wider">4. Sắp xếp ưu tiên</div>
+                    <div class="p-3.5 bg-white space-y-2 text-xs">
+                        <div class="text-slate-500">❌ <strong>Cách cũ:</strong> Cảm tính, dễ sa đà vào việc vụn vặt</div>
+                        <div class="p-2.5 rounded-xl bg-indigo-50/70 text-slate-900 font-semibold border border-indigo-100">✔ <strong>Time Management:</strong> Tự động lọc theo Ma trận Eisenhower (Quy tắc 80/20)</div>
+                    </div>
+                </div>
+                <div class="rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+                    <div class="bg-slate-900 text-white px-4 py-2.5 text-xs font-bold uppercase tracking-wider">5. Chi phí đầu tư</div>
+                    <div class="p-3.5 bg-white space-y-2 text-xs">
+                        <div class="text-slate-500">❌ <strong>Cách cũ:</strong> Lãng phí hàng giờ mỗi ngày vì quá tải</div>
+                        <div class="p-2.5 rounded-xl bg-indigo-50 text-indigo-700 font-extrabold border border-indigo-200">🔥 Chỉ 1.000đ/ngày (Tặng 7 ngày dùng thử miễn phí)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Giao diện Máy tính (Desktop): Bảng 1 Hàng Ngang -->
+            <div class="hidden md:block overflow-x-auto rounded-3xl border border-slate-200 shadow-lg">
                 <table class="w-full text-left border-collapse">
                     <thead>
                         <tr class="bg-slate-900 text-white text-xs sm:text-sm">
@@ -521,37 +573,37 @@
     </section>
 
     <!-- 5. BENEFITS (LỢI ÍCH KHÁCH HÀNG NHẬN ĐƯỢC) -->
-    <section id="loi-ich" class="py-16 md:py-24 bg-slate-50 px-4 sm:px-6 border-t border-slate-200/70">
+    <section id="loi-ich" class="py-12 sm:py-16 md:py-24 bg-slate-50 px-4 sm:px-6 border-t border-slate-200/70">
         <div class="max-w-5xl mx-auto">
-            <div class="text-center max-w-4xl mx-auto mb-14">
-                <span class="text-emerald-600 font-bold text-sm uppercase tracking-wider">Sự thay đổi sau 7 ngày</span>
-                <h2 class="text-xl sm:text-3xl lg:text-[32px] md:whitespace-nowrap font-extrabold text-slate-900 mt-2">
+            <div class="text-center max-w-4xl mx-auto mb-10 sm:mb-14">
+                <span class="text-emerald-600 font-bold text-xs sm:text-sm uppercase tracking-wider">Sự thay đổi sau 7 ngày</span>
+                <h2 class="text-xl sm:text-3xl lg:text-[32px] md:whitespace-nowrap font-extrabold text-slate-900 mt-2 balance-text leading-snug">
                     Lợi ích thực tế khi bạn sở hữu "Trung Tâm Chỉ Huy" của riêng mình
                 </h2>
             </div>
 
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm">
-                    <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl mb-4">🎯</div>
-                    <h3 class="font-bold text-slate-900 text-base mb-2">Hết sạch cảm giác "ngợp" mỗi sáng</h3>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl sm:text-2xl mb-3.5 sm:mb-4">🎯</div>
+                    <h3 class="font-bold text-slate-900 text-base mb-1.5 sm:mb-2">Hết sạch cảm giác "ngợp" mỗi sáng</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">Trợ lý điều hành ngày mới sắp xếp sẵn trình tự thời gian, giúp bạn bắt tay vào việc ngay lập tức với sự quyết đoán cao nhất.</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm">
-                    <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl mb-4">⚡</div>
-                    <h3 class="font-bold text-slate-900 text-base mb-2">Tiết kiệm 2 giờ mỗi ngày nhờ Quy tắc 80/20</h3>
+                <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl sm:text-2xl mb-3.5 sm:mb-4">⚡</div>
+                    <h3 class="font-bold text-slate-900 text-base mb-1.5 sm:mb-2">Tiết kiệm 2 giờ mỗi ngày nhờ Quy tắc 80/20</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">Tập trung 100% năng lượng vào nhóm việc "Làm ngay" và "Lên lịch" tạo ra kết quả thật sự thay vì làm việc lan man.</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm">
-                    <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl mb-4">🔔</div>
-                    <h3 class="font-bold text-slate-900 text-base mb-2">Không bao giờ Miss Deadline</h3>
+                <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl sm:text-2xl mb-3.5 sm:mb-4">🔔</div>
+                    <h3 class="font-bold text-slate-900 text-base mb-1.5 sm:mb-2">Không bao giờ Miss Deadline</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">Smart Calendar tự động đồng bộ hạn chót và cho phép bạn tick hoàn thành ngay trên lịch cực kỳ tiện lợi.</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm">
-                    <div class="w-12 h-12 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center text-2xl mb-4">🌿</div>
-                    <h3 class="font-bold text-slate-900 text-base mb-2">Chủ động cân bằng Công việc & Nghỉ ngơi</h3>
+                <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm">
+                    <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center text-xl sm:text-2xl mb-3.5 sm:mb-4">🌿</div>
+                    <h3 class="font-bold text-slate-900 text-base mb-1.5 sm:mb-2">Chủ động cân bằng Công việc & Nghỉ ngơi</h3>
                     <p class="text-slate-600 text-sm leading-relaxed">Nhìn rõ lộ trình 7 ngày tới trên 1 màn hình để phân bổ hợp lý giữa thời gian chạy dự án và thời gian thư giãn.</p>
                 </div>
             </div>
@@ -559,60 +611,60 @@
     </section>
 
     <!-- 6. PRICING & FINAL CTA -->
-    <section id="bang-gia" class="py-16 md:py-24 px-4 sm:px-6 bg-slate-900 text-white">
+    <section id="bang-gia" class="py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-slate-900 text-white">
         <div class="max-w-4xl mx-auto text-center">
-            <span class="inline-block px-3.5 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-semibold uppercase tracking-wider mb-4">
+            <span class="inline-block px-3.5 py-1 rounded-full bg-indigo-500/20 text-indigo-300 text-xs font-semibold uppercase tracking-wider mb-3 sm:mb-4">
                 Khoản đầu tư thông minh nhất cho bản thân
             </span>
-            <h2 class="text-xl sm:text-3xl lg:text-[34px] md:whitespace-nowrap font-extrabold mb-4">
+            <h2 class="text-xl sm:text-3xl lg:text-[34px] md:whitespace-nowrap font-extrabold mb-3 sm:mb-4 balance-text leading-snug">
                 Làm chủ toàn bộ hệ thống <span class="text-amber-400">6 Trong 1</span> chỉ với 1.000đ/ngày
             </h2>
-            <p class="text-slate-300 max-w-xl mx-auto mb-12 text-base sm:text-lg">
+            <p class="text-slate-300 max-w-xl mx-auto mb-10 sm:mb-12 text-sm sm:text-lg balance-text">
                 Bắt đầu với 7 ngày dùng thử miễn phí toàn bộ tính năng. Không rủi ro, trải nghiệm thực tế ngay hôm nay!
             </p>
 
             <!-- Pricing Card -->
-            <div class="max-w-lg mx-auto bg-white text-slate-900 rounded-3xl p-8 sm:p-10 shadow-2xl border-4 border-indigo-500 relative">
-                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-cyan-500 text-white text-xs font-extrabold uppercase tracking-wider px-4 py-1.5 rounded-full shadow">
+            <div class="max-w-lg mx-auto bg-white text-slate-900 rounded-3xl p-6 sm:p-10 shadow-2xl border-4 border-indigo-500 relative mt-4">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-indigo-600 to-cyan-500 text-white text-[11px] sm:text-xs font-extrabold uppercase tracking-wider px-3.5 sm:px-4 py-1.5 rounded-full shadow whitespace-nowrap">
                     🎁 Tặng Ngay 7 Ngày Dùng Thử Miễn Phí
                 </div>
 
-                <h3 class="text-xl font-bold text-slate-800 mt-2">Time Management Pro (Gói 1 Năm)</h3>
-                <div class="my-5 flex items-baseline justify-center gap-2">
+                <h3 class="text-lg sm:text-xl font-bold text-slate-800 mt-2">Time Management Pro (Gói 1 Năm)</h3>
+                <div class="my-4 sm:my-5 flex items-baseline justify-center gap-1.5 sm:gap-2">
                     <span class="text-4xl sm:text-5xl font-extrabold text-slate-900">365.000đ</span>
-                    <span class="text-slate-500 font-medium">/ năm</span>
+                    <span class="text-slate-500 font-medium text-sm sm:text-base">/ năm</span>
                 </div>
-                <div class="inline-block bg-emerald-50 text-emerald-700 font-bold text-sm px-4 py-1.5 rounded-xl mb-6 border border-emerald-200">
+                <div class="inline-block bg-emerald-50 text-emerald-700 font-bold text-xs sm:text-sm px-3.5 sm:px-4 py-1.5 rounded-xl mb-6 border border-emerald-200">
                     💡 Tương đương chỉ 1.000đ / ngày!
                 </div>
 
-                <ul class="text-left space-y-3.5 mb-8 text-sm sm:text-base text-slate-700">
-                    <li class="flex items-start gap-3">
+                <ul class="text-left space-y-3 mb-7 sm:mb-8 text-xs sm:text-base text-slate-700">
+                    <li class="flex items-start gap-2.5 sm:gap-3">
                         <span class="text-emerald-500 font-bold mt-0.5">✔</span>
                         <span><strong>Miễn phí 7 ngày dùng thử đầu tiên</strong> (Mở khóa trọn bộ 6 chế độ)</span>
                     </li>
-                    <li class="flex items-start gap-3">
+                    <li class="flex items-start gap-2.5 sm:gap-3">
                         <span class="text-emerald-500 font-bold mt-0.5">✔</span>
                         <span><strong>Trung tâm chỉ huy (Table & Dashboard):</strong> Tự động đồng bộ dữ liệu sang 6 tab</span>
                     </li>
-                    <li class="flex items-start gap-3">
+                    <li class="flex items-start gap-2.5 sm:gap-3">
                         <span class="text-emerald-500 font-bold mt-0.5">✔</span>
                         <span><strong>Smart Calendar + Task Updater:</strong> Tick hoàn thành việc ngay trên Lịch</span>
                     </li>
-                    <li class="flex items-start gap-3">
+                    <li class="flex items-start gap-2.5 sm:gap-3">
                         <span class="text-emerald-500 font-bold mt-0.5">✔</span>
                         <span><strong>Bảng Kanban & Ma trận Eisenhower:</strong> Tự động phân loại ưu tiên 80/20</span>
                     </li>
-                    <li class="flex items-start gap-3">
+                    <li class="flex items-start gap-2.5 sm:gap-3">
                         <span class="text-emerald-500 font-bold mt-0.5">✔</span>
                         <span><strong>Quản trị Tuần (7 ngày) & Trợ lý Điều hành Ngày mới</strong> theo trình tự thời gian</span>
                     </li>
                 </ul>
 
-                <button onclick="openModal()" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold text-lg py-4 px-6 rounded-2xl shadow-lg shadow-indigo-200 transition transform hover:-translate-y-0.5">
-                    👉 Kích Hoạt 7 Ngày Dùng Thử Miễn Phí Ngay
+                <button onclick="openModal()" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold text-sm sm:text-lg py-3.5 sm:py-4 px-4 sm:px-6 rounded-2xl shadow-lg shadow-indigo-200 transition transform hover:-translate-y-0.5 whitespace-nowrap">
+                    👉 Kích Hoạt 7 Ngày Dùng Thử Miễn Phí
                 </button>
-                <p class="text-xs text-slate-500 mt-4">
+                <p class="text-[11px] sm:text-xs text-slate-500 mt-3.5 sm:mt-4 leading-relaxed">
                     🔒 Kích hoạt tức thì • Hỗ trợ tận tâm 24/7 • Hủy bất kỳ lúc nào trong 7 ngày dùng thử.
                 </p>
             </div>
@@ -620,7 +672,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-950 text-slate-400 py-8 px-4 text-center text-sm border-t border-slate-800">
+    <footer class="bg-slate-950 text-slate-400 py-6 sm:py-8 px-4 text-center text-xs sm:text-sm border-t border-slate-800">
         <p>© 2026 <strong>Time Management Web App (6-in-1)</strong>. Nắm trọn tiến độ trong lòng bàn tay.</p>
     </footer>
 
@@ -661,10 +713,10 @@
                 const btn = document.getElementById('tab-btn-' + t);
                 if (t === tabName) {
                     content.classList.remove('hidden');
-                    btn.className = 'w-full py-2 px-2 rounded-lg text-xs font-semibold text-center whitespace-nowrap bg-indigo-600 text-white shadow-sm transition';
+                    btn.className = 'w-full py-2 px-1.5 sm:px-2 rounded-lg text-[11px] sm:text-xs font-semibold text-center whitespace-nowrap bg-indigo-600 text-white shadow-sm transition';
                 } else {
                     content.classList.add('hidden');
-                    btn.className = 'w-full py-2 px-2 rounded-lg text-xs font-semibold text-center whitespace-nowrap text-slate-300 hover:text-white hover:bg-slate-700/60 transition';
+                    btn.className = 'w-full py-2 px-1.5 sm:px-2 rounded-lg text-[11px] sm:text-xs font-semibold text-center whitespace-nowrap text-slate-300 hover:text-white hover:bg-slate-700/60 transition';
                 }
             });
         }
